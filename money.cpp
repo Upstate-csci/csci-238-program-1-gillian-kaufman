@@ -106,7 +106,7 @@ string Money::processCheck()
     if (dollars < 10)                                       //If amount of dollars is less than 10
         nameOfNumber = onesPlace[dollars];
     else if (dollars < 20)                                  //If amount of dollars is less than 20
-        nameOfNumber = hundredsPlace[dollars - 10];
+        nameOfNumber = tensPlace[dollars - 10];
     else if (dollars < 100)                                 //If amount of dollars is less than 100
     {
         nameOfNumber = hundredsPlace[dollars / 10];
